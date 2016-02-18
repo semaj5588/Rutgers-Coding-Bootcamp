@@ -1,0 +1,61 @@
+<!-- // Psychic Game Steps
+
+// 1. Computer picks a random letter
+
+var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+// find a way to console.log a random letter
+
+var letter = letters[Math.floor(Math.random()*letters.length)];
+
+console.log(letter);
+
+// 2. Start with 9 guesses
+
+// 3. When you pick the winning letter, win count goes up by one
+
+// 4. When you pick the wrong letter, guess count goes down by one
+
+// 5. When you guess wrong 9 times, your loss count goes up by 1
+
+// 6. When you win, the guess count goes back up to 9
+
+// 7. When you lose, the guess count goes back up to 9 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title>The Psychic Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
+</head>
+
+
+<body>
+
+    <h1 id="title">The Psychic Game</h1>
+
+    <h1 id="letter">Guess what letter I'm thinking of:</h1>
+
+    <h1 id="winsheader">Wins:  <span id="wins">0</span></h1>
+
+    <h1 id="lossesheader">Losses:  <span id="losses">0</span></h1>
+
+    <h1 id="guesses-left">Guesses Left:  <span id="guesses">9</span></h1>
+
+    <h1 id="guesses-so-far">Your Guesses so far: <input type="text" name="input" autofocus class="autoinput"><h1>
+
+
+<footer id="footer">Coding Boot Camp (C) 2015. All Rights Reserved.</footer>
+</body>
+</html>
+
+
+
+
+
+
+
